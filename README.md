@@ -1,5 +1,3 @@
-
-
 # Dice-Roll-Visualization
 
 Using [Matplotlib](https://matplotlib.org/) and [Seaborn](https://seaborn.pydata.org/) to graph the probabilities of the faces of a die in a specified number of rolls.
@@ -79,11 +77,14 @@ Now, we'll create a script to visualize the distribution using matplotlib and se
 ### Static visualization
 
 Now, run the `roll_die_plot.py` in your Linux terminal to create a static graph of the frequency distribution.
+
 Example 1:
 ```bash
 $ python roll_die_plot.py 100
 ```
+
 ![Figure 1](https://github.com/adviksinghania/diceroll-visualization/raw/main/Figure_1.png)
+
 ```bash
 Face |   Frequency | Probability
    1 |          14 |     14.000%
@@ -95,11 +96,15 @@ Face |   Frequency | Probability
 
 ```
 <br>
+
 Example 2:
+
 ```bash
 $ python roll_die_plot.py 6000000
 ```
+
 ![Figure 2](https://github.com/adviksinghania/diceroll-visualization/raw/main/Figure_2.png)
+
 ```bash
 Face |   Frequency | Probability
    1 |      999521 |     16.659%
@@ -110,4 +115,5 @@ Face |   Frequency | Probability
    6 |     1000802 |     16.680%
 
 ```
+
 <br>
