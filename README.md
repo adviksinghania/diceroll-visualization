@@ -117,3 +117,19 @@ Face |   Frequency | Probability
 ```
 
 <br>
+
+### Dynamic Visualization
+
+In this script, we use matplotlib animation's `FuncAnimation` function which updates the bar plot dynamically.<br>
+We'll have to give two command line arguments to this script:
+-   number of frames — The number of animation frames to display. This value determines the total number of times that FuncAnimation updates the graph. For each animation frame, FuncAnimation calls a function that you define (in this example, update) to specify how to change the plot.
+-   rolls per frame—The number of times to roll the die in each animation frame. We’ll use a loop to roll the die this number of times, summarize the results, then update the graph with bars and text representing the new frequencies
+
+Example:<br>
+```bash
+python roll_die_dynamic.py 300 20
+```
+
+This will run the script for 300 frames, doing 20 die rolls per frame, for 30 milliseconds per frame (33 FPS) and the `update` function will be called 6000 times (20 rolls per frame * 300 frames).
+
+![Example](https://github.com/adviksinghania/diceroll-visualization/blob/main/example.gif?raw=True)
