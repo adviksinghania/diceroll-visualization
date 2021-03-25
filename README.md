@@ -1,4 +1,5 @@
 
+
 # Dice-Roll-Visualization
 
 Using [Matplotlib](https://matplotlib.org/) and [Seaborn](https://seaborn.pydata.org/) to graph the probabilities of the faces of a die in a specified number of rolls.
@@ -65,4 +66,48 @@ Face    Frequency
    6       998656
 ```
 We can see that the frequency for each face is almost equal to 1,000,000 and therefore the probability for each face is almost 16.67%. Depending upon your system, this script would take time to execute since we are generating random numbers, 6 million times.
+Now, we'll create a script to visualize the distribution using matplotlib and seaborn.
 
+## Setup
+
+-   Install venv for Python3 by running `sudo apt-get install python3-venv` in your Linux terminal.
+-   Clone this repository locally, using `git clone https://github.com/adviksinghania/diceroll-visualization.git`
+-   Navigate inside the directory using `cd diceroll-visualization`
+-   Run `python3 -m venv ./env` to create a virtual environment in the current directory.
+-   Run `pip install -r requirements.txt` to install the dependencies. or just `pip install matplotlib seaborn` to install matplotlib and seaborn.
+
+### Static visualization
+
+Now, run the `roll_die_plot.py` in your Linux terminal to create a static graph of the frequency distribution.
+Example 1:
+```bash
+$ python roll_die_plot.py 100
+```
+![Figure 1](https://github.com/adviksinghania/diceroll-visualization/raw/main/Figure_1.png)
+```bash
+Face |   Frequency | Probability
+   1 |          14 |     14.000%
+   2 |          19 |     19.000%
+   3 |          14 |     14.000%
+   4 |          25 |     25.000%
+   5 |          16 |     16.000%
+   6 |          12 |     12.000%
+
+```
+<br>
+Example 2:
+```bash
+$ python roll_die_plot.py 6000000
+```
+![Figure 2](https://github.com/adviksinghania/diceroll-visualization/raw/main/Figure_2.png)
+```bash
+Face |   Frequency | Probability
+   1 |      999521 |     16.659%
+   2 |      999198 |     16.653%
+   3 |      998664 |     16.644%
+   4 |     1002321 |     16.705%
+   5 |      999494 |     16.658%
+   6 |     1000802 |     16.680%
+
+```
+<br>
